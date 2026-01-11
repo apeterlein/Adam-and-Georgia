@@ -1,0 +1,122 @@
+body {
+    background-color: #edddd4;
+}
+
+.body-content {
+    font-family: Verdana, sans-serif;
+    padding: 1em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    text-align: left;
+}
+
+.section {
+    display: flex;
+    padding-top: 2em;
+}
+
+.section-content {
+    font-size: 0.6em;
+}
+
+.section-letter-1 {
+    color: #ca4246;
+}
+
+.section-letter-2 {
+    color: #e16541;
+}
+
+.section-letter-3 {
+    color: #f18f43;
+}
+
+.section-letter-4 {
+    color: #8b9862;
+}
+
+.section-letter-5 {
+    color: #476098;
+}
+
+.section-letter-6 {
+    color: #a7489b;
+}
+
+.header {
+    font-size: 6em;
+    font-weight: 900;
+}
+
+.section-header {
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.header-letter {
+    background: #ca4246;
+    background-color: #ca4246;
+    background: conic-gradient(
+        #ca4246 16.6667%,
+        #e16541 16.6667%,
+        #e16541 33.3333%,
+        #f18f43 33.3333%,
+        #f18f43 50%,
+        #8b9862 50%,
+        #8b9862 66.6667%,
+        #476098 66.6667%,
+        #476098 83.3333%,
+        #a7489b 83.3333%);
+    background-size: 30%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    animation: header-letter-animation-rev 0.5s ease forwards;
+}
+
+.header-letter:hover {
+    animation: header-letter-animation 0.5s ease forwards;
+}
+
+@keyframes header-letter-animation {
+    0% {
+        background-size: 30%;
+        background-position: 0 0;
+    }
+    20% {
+        background-size: 30%;
+        background-position: 0 1em;
+    }
+    100% {
+        background-size: 160%;
+        background-position: -9.5em 1em;
+    }
+}
+
+@keyframes header-letter-animation-rev {
+    0% {
+        background-size: 160%;
+        background-position: -9.5em 1em;
+    }
+    20% {
+        background-size: 30%;
+        background-position: 0 1em;
+    }
+    100% {
+        background-size: 30%;
+        background-position: 0 0;
+    }
+}
