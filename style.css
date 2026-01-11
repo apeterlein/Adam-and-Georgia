@@ -47,19 +47,23 @@ body {
 }
 
 .section-letter-5 {
-    color: #476098;
+    color: #697C7D;
 }
 
 .section-letter-6 {
-    color: #77549a
+    color: #476098;
 }
 
 .section-letter-7 {
+    color: #77549a
+}
+
+.section-letter-8 {
     color: #a7489b;
 }
 
 .header {
-    font-size: 6em;
+    font-size: clamp(2em, 12vw, 6em);
     font-weight: 900;
 }
 
